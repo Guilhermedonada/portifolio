@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Gil-Sans-Ultra';
+  src:  url('../fonts/gilsanub.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+@font-face {
+  font-family: 'Source-Code-Pro';
+  src:  url('../fonts/SourceCodePro-Light.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +20,6 @@
 
 $yellow: #212121;
 $green: #212121;
-$blue: #212121;
+$darkblack: rgb(25, 25, 25);
+$brown: rgb(114, 94, 21);
+$shadow:  0px 0px 3px rgb(136, 136, 136);

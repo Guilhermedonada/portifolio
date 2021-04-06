@@ -1,3 +1,20 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Gil-Sans-Ultra';
+  src: url("../fonts/gilsanub.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Source-Code-Pro';
+  src: url("../fonts/SourceCodePro-Light.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,28 +22,247 @@
           box-sizing: border-box;
 }
 
-body {
+.css-home body {
   width: 100%;
   height: 100%;
 }
 
-section:first-child {
+.css-home section:first-child {
   background-image: url("../images/yellow.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4vw 8vw 2vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  min-height: 100vh;
 }
 
-section:last-child {
+.css-home section:last-child {
   background-image: url("../images/green.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4vw 8vw 2vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  min-height: 100vh;
+}
+
+.css-home .css-photo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.css-home .css-text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -4vw;
+}
+
+.css-home .css-bike-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.css-home .css-stack-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 6vw;
+}
+
+.css-home .css-stack-area div {
+  width: 50vw;
+}
+
+.css-home .css-stack-area div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.css-home .css-stack-area div div ul {
+  padding-right: 4vw;
+}
+
+.css-home h1 {
+  font-family: 'Gil-Sans-Ultra', Fallback, sans-serif;
+  font-size: 4.5vw;
+  color: white;
+  text-shadow: 0.5vw 0.5vw 0vw #725e15;
+  text-indent: -0.3vw;
+}
+
+.css-home h2 {
+  font-family: 'Gil-Sans-Ultra', Fallback, sans-serif;
+  font-size: 3vw;
+  color: white;
+  text-shadow: 0.5vw 0.5vw 0vw #191919;
+}
+
+.css-home h5 {
+  font-family: 'Source-Code-Pro', Fallback, sans-serif;
+  font-size: 1.5vw;
+  color: #725e15;
+  margin-top: 1vw;
+  margin-bottom: auto;
+}
+
+.css-home .css-svg-photo {
+  width: 30vw;
+}
+
+.css-home .css-svg-bike {
+  width: 25vw;
+}
+
+.css-home .css-stack-area ul, .css-home .css-project-area ul {
+  font-family: 'Source-Code-Pro', Fallback, sans-serif;
+  font-size: 1.7vw;
+  color: white;
+  list-style: none;
+  margin-top: 1vw;
+}
+
+.css-home .css-stack-area ul li:before, .css-home .css-project-area ul li:before {
+  content: "- ";
+}
+
+.css-home .css-project-area {
+  margin-top: 1.5vw;
+}
+
+.css-home .css-rede-green {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40vw;
+}
+
+.css-home .css-rede_2-green {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20vw;
+}
+
+.css-home .css-rede_2-green div {
+  position: relative;
+}
+
+.css-home .css-rede_2-green div svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.css-home .css-rede-yellow {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40vw;
+}
+
+.css-home .css-rede-yellow div {
+  position: relative;
+}
+
+.css-home .css-rede-yellow div svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.css-home .css-text-area a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.css-home .css-text-area a img {
+  fill: white;
+  width: 3vw;
+  -webkit-animation: bounce 3s infinite;
+          animation: bounce 3s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
 /*# sourceMappingURL=home.css.map */
